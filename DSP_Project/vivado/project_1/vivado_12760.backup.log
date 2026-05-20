@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar  4 09:46:59 2026
+# Process ID: 12760
+# Current directory: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7972 C:\Users\mahmo\OneDrive\Desktop\Project_1_DSP\vivado\project_1\project_1.xpr
+# Log file: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/project_1/vivado.log
+# Journal file: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a200tffg1156-3
+Top: DSP_Project
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1000.984 ; gain = 106.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DSP_Project' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/DSP_Project.v:1]
+	Parameter A0REG bound to: 1'b0 
+	Parameter A1REG bound to: 1'b1 
+	Parameter B0REG bound to: 1'b0 
+	Parameter B1REG bound to: 1'b1 
+	Parameter CREG bound to: 1'b1 
+	Parameter DREG bound to: 1'b1 
+	Parameter MREG bound to: 1'b1 
+	Parameter PREG bound to: 1'b1 
+	Parameter CARRYINREG bound to: 1'b1 
+	Parameter CARRYOUTREG bound to: 1'b1 
+	Parameter OPMODEREG bound to: 1'b1 
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'FFmux_DSP' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+	Parameter RSTTYPE bound to: SYNC - type: string 
+	Parameter EN_REG bound to: 1'b0 
+	Parameter SIZE bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFmux_DSP' (1#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFmux_DSP__parameterized0' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+	Parameter RSTTYPE bound to: SYNC - type: string 
+	Parameter EN_REG bound to: 1'b1 
+	Parameter SIZE bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFmux_DSP__parameterized0' (1#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFmux_DSP__parameterized1' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+	Parameter RSTTYPE bound to: SYNC - type: string 
+	Parameter EN_REG bound to: 1'b1 
+	Parameter SIZE bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFmux_DSP__parameterized1' (1#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFmux_DSP__parameterized2' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+	Parameter RSTTYPE bound to: SYNC - type: string 
+	Parameter EN_REG bound to: 1'b1 
+	Parameter SIZE bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFmux_DSP__parameterized2' (1#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFmux_DSP__parameterized3' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+	Parameter RSTTYPE bound to: SYNC - type: string 
+	Parameter EN_REG bound to: 1'b1 
+	Parameter SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFmux_DSP__parameterized3' (1#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFmux_DSP__parameterized4' [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+	Parameter RSTTYPE bound to: SYNC - type: string 
+	Parameter EN_REG bound to: 1'b1 
+	Parameter SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFmux_DSP__parameterized4' (1#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/FFmux_DSP.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DSP_Project' (2#1) [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/DSP_Project.v:1]
+WARNING: [Synth 8-3331] design FFmux_DSP has unconnected port clk
+WARNING: [Synth 8-3331] design FFmux_DSP has unconnected port rst
+WARNING: [Synth 8-3331] design FFmux_DSP has unconnected port enable
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port CARRYIN
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[17]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[16]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[15]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[14]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[13]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[12]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[11]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[10]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[9]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[8]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[7]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[6]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[5]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[4]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[3]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[2]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[1]
+WARNING: [Synth 8-3331] design DSP_Project has unconnected port BCIN[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1010.801 ; gain = 116.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1010.801 ; gain = 116.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1010.801 ; gain = 116.379
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/Constraints_basys3.xdc]
+Finished Parsing XDC File [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/Constraints_basys3.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1480.516 ; gain = 586.094
+18 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1480.516 ; gain = 586.094
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Mar  4 09:48:47 2026] Launched synth_1...
+Run output will be captured here: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tffg1156-3
+INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/Constraints_basys3.xdc]
+Finished Parsing XDC File [C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/Constraints_basys3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 6
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2141.008 ; gain = 0.000
+[Wed Mar  4 09:51:22 2026] Launched impl_1...
+Run output will be captured here: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2275.371 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2275.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+current_design synth_1
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2369.215 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list CLK_IBUF_BUFG ]]
+set_property port_width 18 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {D_IBUF[0]} {D_IBUF[1]} {D_IBUF[2]} {D_IBUF[3]} {D_IBUF[4]} {D_IBUF[5]} {D_IBUF[6]} {D_IBUF[7]} {D_IBUF[8]} {D_IBUF[9]} {D_IBUF[10]} {D_IBUF[11]} {D_IBUF[12]} {D_IBUF[13]} {D_IBUF[14]} {D_IBUF[15]} {D_IBUF[16]} {D_IBUF[17]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 48 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {PCOUT_OBUF[0]} {PCOUT_OBUF[1]} {PCOUT_OBUF[2]} {PCOUT_OBUF[3]} {PCOUT_OBUF[4]} {PCOUT_OBUF[5]} {PCOUT_OBUF[6]} {PCOUT_OBUF[7]} {PCOUT_OBUF[8]} {PCOUT_OBUF[9]} {PCOUT_OBUF[10]} {PCOUT_OBUF[11]} {PCOUT_OBUF[12]} {PCOUT_OBUF[13]} {PCOUT_OBUF[14]} {PCOUT_OBUF[15]} {PCOUT_OBUF[16]} {PCOUT_OBUF[17]} {PCOUT_OBUF[18]} {PCOUT_OBUF[19]} {PCOUT_OBUF[20]} {PCOUT_OBUF[21]} {PCOUT_OBUF[22]} {PCOUT_OBUF[23]} {PCOUT_OBUF[24]} {PCOUT_OBUF[25]} {PCOUT_OBUF[26]} {PCOUT_OBUF[27]} {PCOUT_OBUF[28]} {PCOUT_OBUF[29]} {PCOUT_OBUF[30]} {PCOUT_OBUF[31]} {PCOUT_OBUF[32]} {PCOUT_OBUF[33]} {PCOUT_OBUF[34]} {PCOUT_OBUF[35]} {PCOUT_OBUF[36]} {PCOUT_OBUF[37]} {PCOUT_OBUF[38]} {PCOUT_OBUF[39]} {PCOUT_OBUF[40]} {PCOUT_OBUF[41]} {PCOUT_OBUF[42]} {PCOUT_OBUF[43]} {PCOUT_OBUF[44]} {PCOUT_OBUF[45]} {PCOUT_OBUF[46]} {PCOUT_OBUF[47]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 48 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {PCIN_IBUF[0]} {PCIN_IBUF[1]} {PCIN_IBUF[2]} {PCIN_IBUF[3]} {PCIN_IBUF[4]} {PCIN_IBUF[5]} {PCIN_IBUF[6]} {PCIN_IBUF[7]} {PCIN_IBUF[8]} {PCIN_IBUF[9]} {PCIN_IBUF[10]} {PCIN_IBUF[11]} {PCIN_IBUF[12]} {PCIN_IBUF[13]} {PCIN_IBUF[14]} {PCIN_IBUF[15]} {PCIN_IBUF[16]} {PCIN_IBUF[17]} {PCIN_IBUF[18]} {PCIN_IBUF[19]} {PCIN_IBUF[20]} {PCIN_IBUF[21]} {PCIN_IBUF[22]} {PCIN_IBUF[23]} {PCIN_IBUF[24]} {PCIN_IBUF[25]} {PCIN_IBUF[26]} {PCIN_IBUF[27]} {PCIN_IBUF[28]} {PCIN_IBUF[29]} {PCIN_IBUF[30]} {PCIN_IBUF[31]} {PCIN_IBUF[32]} {PCIN_IBUF[33]} {PCIN_IBUF[34]} {PCIN_IBUF[35]} {PCIN_IBUF[36]} {PCIN_IBUF[37]} {PCIN_IBUF[38]} {PCIN_IBUF[39]} {PCIN_IBUF[40]} {PCIN_IBUF[41]} {PCIN_IBUF[42]} {PCIN_IBUF[43]} {PCIN_IBUF[44]} {PCIN_IBUF[45]} {PCIN_IBUF[46]} {PCIN_IBUF[47]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {OPMODE_IBUF[0]} {OPMODE_IBUF[1]} {OPMODE_IBUF[2]} {OPMODE_IBUF[3]} {OPMODE_IBUF[4]} {OPMODE_IBUF[5]} {OPMODE_IBUF[6]} {OPMODE_IBUF[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 18 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {B_IBUF[0]} {B_IBUF[1]} {B_IBUF[2]} {B_IBUF[3]} {B_IBUF[4]} {B_IBUF[5]} {B_IBUF[6]} {B_IBUF[7]} {B_IBUF[8]} {B_IBUF[9]} {B_IBUF[10]} {B_IBUF[11]} {B_IBUF[12]} {B_IBUF[13]} {B_IBUF[14]} {B_IBUF[15]} {B_IBUF[16]} {B_IBUF[17]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 18 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {BCOUT_OBUF[0]} {BCOUT_OBUF[1]} {BCOUT_OBUF[2]} {BCOUT_OBUF[3]} {BCOUT_OBUF[4]} {BCOUT_OBUF[5]} {BCOUT_OBUF[6]} {BCOUT_OBUF[7]} {BCOUT_OBUF[8]} {BCOUT_OBUF[9]} {BCOUT_OBUF[10]} {BCOUT_OBUF[11]} {BCOUT_OBUF[12]} {BCOUT_OBUF[13]} {BCOUT_OBUF[14]} {BCOUT_OBUF[15]} {BCOUT_OBUF[16]} {BCOUT_OBUF[17]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 48 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {C_IBUF[0]} {C_IBUF[1]} {C_IBUF[2]} {C_IBUF[3]} {C_IBUF[4]} {C_IBUF[5]} {C_IBUF[6]} {C_IBUF[7]} {C_IBUF[8]} {C_IBUF[9]} {C_IBUF[10]} {C_IBUF[11]} {C_IBUF[12]} {C_IBUF[13]} {C_IBUF[14]} {C_IBUF[15]} {C_IBUF[16]} {C_IBUF[17]} {C_IBUF[18]} {C_IBUF[19]} {C_IBUF[20]} {C_IBUF[21]} {C_IBUF[22]} {C_IBUF[23]} {C_IBUF[24]} {C_IBUF[25]} {C_IBUF[26]} {C_IBUF[27]} {C_IBUF[28]} {C_IBUF[29]} {C_IBUF[30]} {C_IBUF[31]} {C_IBUF[32]} {C_IBUF[33]} {C_IBUF[34]} {C_IBUF[35]} {C_IBUF[36]} {C_IBUF[37]} {C_IBUF[38]} {C_IBUF[39]} {C_IBUF[40]} {C_IBUF[41]} {C_IBUF[42]} {C_IBUF[43]} {C_IBUF[44]} {C_IBUF[45]} {C_IBUF[46]} {C_IBUF[47]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 36 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {M_OBUF[0]} {M_OBUF[1]} {M_OBUF[2]} {M_OBUF[3]} {M_OBUF[4]} {M_OBUF[5]} {M_OBUF[6]} {M_OBUF[7]} {M_OBUF[8]} {M_OBUF[9]} {M_OBUF[10]} {M_OBUF[11]} {M_OBUF[12]} {M_OBUF[13]} {M_OBUF[14]} {M_OBUF[15]} {M_OBUF[16]} {M_OBUF[17]} {M_OBUF[18]} {M_OBUF[19]} {M_OBUF[20]} {M_OBUF[21]} {M_OBUF[22]} {M_OBUF[23]} {M_OBUF[24]} {M_OBUF[25]} {M_OBUF[26]} {M_OBUF[27]} {M_OBUF[28]} {M_OBUF[29]} {M_OBUF[30]} {M_OBUF[31]} {M_OBUF[32]} {M_OBUF[33]} {M_OBUF[34]} {M_OBUF[35]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 18 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {A_IBUF[0]} {A_IBUF[1]} {A_IBUF[2]} {A_IBUF[3]} {A_IBUF[4]} {A_IBUF[5]} {A_IBUF[6]} {A_IBUF[7]} {A_IBUF[8]} {A_IBUF[9]} {A_IBUF[10]} {A_IBUF[11]} {A_IBUF[12]} {A_IBUF[13]} {A_IBUF[14]} {A_IBUF[15]} {A_IBUF[16]} {A_IBUF[17]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list CARRYOUTF_OBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list CEA_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list CEB_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list CEC_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list CECARRYIN_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list CED_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list CEM_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list CEOPMODE_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list CEP_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list CLK_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list RSTA_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list RSTB_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list RSTC_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list RSTCARRYIN_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list RSTD_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe24]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24]
+connect_debug_port u_ila_0/probe24 [get_nets [list RSTM_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe25]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe25]
+connect_debug_port u_ila_0/probe25 [get_nets [list RSTOPMODE_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe26]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe26]
+connect_debug_port u_ila_0/probe26 [get_nets [list RSTP_IBUF ]]
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 10:16:55 2026...

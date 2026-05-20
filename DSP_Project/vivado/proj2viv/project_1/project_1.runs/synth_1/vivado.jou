@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar  4 10:22:15 2026
+# Process ID: 21384
+# Current directory: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/proj2viv/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log DSP_Project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DSP_Project.tcl
+# Log file: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/proj2viv/project_1/project_1.runs/synth_1/DSP_Project.vds
+# Journal file: C:/Users/mahmo/OneDrive/Desktop/Project_1_DSP/vivado/proj2viv/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DSP_Project.tcl -notrace
