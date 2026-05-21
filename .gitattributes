@@ -1,12 +1,8 @@
-# تجاهل ملفات Vivado
 vivado/** linguist-vendored
 
-# تجاهل ملفات TCL
 *.tcl linguist-vendored
 
-# تجاهل constraints لو عايز
 *.xdc linguist-vendored
 
-# خلي Verilog هو الأساسي
 *.v linguist-language=Verilog
 *.sv linguist-language=Verilog
