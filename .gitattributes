@@ -1,9 +1,15 @@
 # Verilog is main language
 *.v linguist-language=Verilog
-*.sv linguist-language=Verilog
 
 # ignore tools/scripts
 vivado/** linguist-vendored
 *.tcl linguist-vendored
 *.xdc linguist-vendored
 *.do linguist-vendored
+*.jou linguist-vendored
+*.log linguist-vendored
+*.str linguist-vendored
+*.wdb linguist-vendored
+*.cache linguist-vendored
+*.runs linguist-vendored
+*.sim linguist-vendored
