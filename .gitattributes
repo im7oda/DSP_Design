@@ -1,5 +1,6 @@
 # Verilog is main language
 *.v linguist-language=Verilog
+*.do linguist-vendored
 
 # ignore tools/scripts
 vivado/** linguist-vendored
